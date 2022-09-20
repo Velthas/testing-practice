@@ -1,3 +1,5 @@
+import { calculator } from './calculator.js';
+
 test('using add method, 2 + 2 returns 4', () => {
     expect(calculator.add(2, 2)).toBe(4);
 });
@@ -22,10 +24,10 @@ test('using multiply method, 7 * 0 returns 0', () => {
     expect(calculator.multiply(7, 0)).toBe(0);
 });
 
-test('using multiply method, 2 : 2 returns 1', () => {
+test('using divide method, 2 : 2 returns 1', () => {
     expect(calculator.divide(2, 2)).toBe(1);
 });
 
-test('using multiply method, 7 : 0 returns bruh', () => {
+test('using divide method, 7 : 0 returns Infinity', () => {
     expect(calculator.divide(7, 0)).toBe(Infinity);
 });
