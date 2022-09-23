@@ -17,4 +17,4 @@ test('function correctly handles capitalized words.', () => {
 test('handles a negative shift of -2', () => {
   caesarCipher.shift(-2);
   expect(caesarCipher.cipher('attack at dawn')).toBe('yrryai yr byul');
-})
+});
