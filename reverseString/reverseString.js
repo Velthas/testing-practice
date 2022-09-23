@@ -1,4 +1,4 @@
-export default reverseString
+export default reverseString;
 
 // Takes the initial string, then turns it into an array of separate
 // letters using the split method with '' as a parameter,
@@ -6,5 +6,5 @@ export default reverseString
 // Ff no argument is passed, join returns elements as comma separated list
 // but I wanted it to return each letter stitched together, so passed '';
 function reverseString(string) {
-    return string.split('').reverse().join('');
-}
+  return string.split('').reverse().join('');
+};
