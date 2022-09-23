@@ -5,6 +5,15 @@ const caesarCipher = (function () {
 
   // Change the cipher shift
   function shift(number) {
+    if (number < 0) {
+      while (number < 0) {
+        number = number + 26;
+      }
+    } else if (number > 26) {
+      while (number > 26) {
+        number = number - 26;
+      }
+    }
     codeShift = number;
   }
 
